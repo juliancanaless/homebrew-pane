@@ -1,6 +1,7 @@
 class Pane < Formula
   desc "Shared local memory and coordination for concurrent coding agents"
   homepage "https://github.com/juliancanaless/pane"
+  version "0.1.0"
   license "MIT"
   head "https://github.com/juliancanaless/pane.git", branch: "main"
 
