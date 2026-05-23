@@ -10,6 +10,7 @@ class Pane < Formula
   depends_on "rust" => :build
 
   def install
+    ENV.prepend_path "PATH", Formula["rust"].opt_bin
     system "make", "build"
     bin.install "bin/pane"
     bin.install "bin/pane-analyze"
